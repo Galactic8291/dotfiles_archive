@@ -1,12 +1,10 @@
 echo '>^.^<'
 execute pathogen#infect()
 
-autocmd BufEnter * :syn sync maxlines=500
-
 syntax on
 filetype plugin indent on
 
-set t_Co=16
+set t_Co=256
 
 set autoindent
 set autoread
@@ -38,7 +36,6 @@ set tabstop=2
 
 set background=dark
 colorscheme wolfpack
-
 let g:airline_theme='luna'
 let g:airline_powerline_fonts = 1
 set laststatus=2
