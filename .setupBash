@@ -1,5 +1,3 @@
-# .bashrc
-
 cd ~
 source .xinitrc
 export VISUAL='vim'
@@ -13,9 +11,9 @@ alias ...='...'
 alias ls='ls --color=auto'
 alias ll='ls -la'
 alias l.='ls -d .* --color=auto'
-PS1='[\u@\h \W]\$ '
+PS1="\[$(tput bold)\]\[$(tput setaf 2)\][\u@\h \W]\\$ \[$(tput sgr0)\]"
 
-# ----------------------
+ #----------------------
 # Git Aliases
 # ----------------------
 alias ga='git add'
@@ -41,4 +39,5 @@ alias gst='git stash'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gstd='git stash drop'
+
 
